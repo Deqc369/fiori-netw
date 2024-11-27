@@ -1,0 +1,21 @@
+/* Main */
+.imgLogin{
+    position:fixed; /* Fija el logo en la pantalla */
+    right:   10px;    /* Distancia desde el borde derecho */
+    z-index: 1000;   /* Asegura que esté encima de otros elementos */
+}
+.cl-btn-package{
+    font-size: 2rem; /* Aumenta el tamaño del ícono */
+    padding: 10px; /* Ajusta el espacio interno del botón */
+    margin-left: 200px; /* Desplaza el botón hacia la derecha */
+    height: 120px; /* Aumenta la altura del botón */
+    width: 60px; /* Aumenta el ancho del botón */  
+}
+.cl-btn-apis{
+    font-size: 2rem; /* Aumenta el tamaño del ícono */
+    padding: 10px; /* Ajusta el espacio interno del botón */
+    margin-left: 200px; /* Desplaza el botón hacia la derecha */
+    height: 120px; /* Aumenta la altura del botón */
+    width: 400px; /* Aumenta el ancho del botón */
+}
+

@@ -1,0 +1,59 @@
+<mvc:View controllerName="com.netw.products.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns:f="sap.f"
+    xmlns="sap.m">
+
+    <f:DynamicPage >
+        <f:title>
+            <f:DynamicPageTitle >
+                <f:heading>
+                    <Title text="{i18n>title}"
+                            wrapping="true"/>
+                </f:heading>
+                <f:content>
+                    <Button icon="sap-icon://product" type="Transparent" press="onPackagePress" ariaLabelledBy="editButtonLabel" class="cl-btn-package"/>
+                </f:content>
+                <f:content>
+                   <Button text="Monitoreo Apis" press="onApisPress" class="cl-btn-apis"/>
+               </f:content>
+               <f:content>
+                   	<Image
+						src="images/logo_netw.png" class="imgLogin"					
+								                   backgroundRepeat="no-repeat">
+				    </Image>
+               </f:content>
+            </f:DynamicPageTitle>
+        </f:title>
+        <f:content>
+            <Table 
+                    items="{northwind>/Products}"
+                    visible="false"> 
+                <columns>
+                    <Column >
+                        <Label text="{i18n>col1}"/>
+                    </Column>
+                    <Column >
+                        <Label text="{i18n>col2}"/>
+                    </Column>
+                    <Column >
+                        <Label text="{i18n>col3}"/>
+                    </Column>
+                    <Column >
+                        <Label text="{i18n>col4}"/>
+                    </Column>
+                    <Column >
+                        <Label text="{i18n>col5}"/>
+                    </Column>
+                </columns>
+                <ColumnListItem >
+                    <cells>
+                        <ObjectIdentifier title="{northwind>ProductName}" text="{northwind>ProductID}"/>
+                        <Text text="{northwind>QuantityPerUnit}"/>
+                        <ObjectNumber number="{northwind>UnitPrice}" unit="USD"/>
+                    </cells>
+                </ColumnListItem>
+            </Table>
+        </f:content>
+    </f:DynamicPage> 
+
+</mvc:View>
